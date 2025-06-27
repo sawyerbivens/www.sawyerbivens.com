@@ -237,8 +237,8 @@ export default function Home() {
               </div>
               <p>
                 I may take longer than usual to respond during the week of Jun
-                30th-Jul 4th due to a medical procedure. I will get back to any
-                messages as soon as possible.
+                30th-Jul 4th. I will respond to any messages as soon as
+                possible.
               </p>
               <p className="mt-2">Thank you for your understanding.</p>
             </div>
