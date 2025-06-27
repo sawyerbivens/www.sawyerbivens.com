@@ -118,7 +118,7 @@ function FilmSection() {
         <p className="text-sm">
           {" "}
           ^ Cost of film is based on Bedford Camera & Video&apos;s price of
-          Kodak Gold 200 (36exp, 35mm) at $14.00/roll as of Jun 26 2025
+          Kodak Gold 200 (36exp, 35mm) at $14.00/roll as of June 26th 2025.
         </p>
       </div>
 
@@ -141,12 +141,12 @@ function FilmSection() {
           and will store the developed film &quot;negatives&quot; for you unless
           you request them.
         </p>
-        <p>
+        {/* <p>
           <span className="underline">Note:</span> If you would like to handle
           this yourself, feel free! Let me know in advance and I will simply
           give you the film rolls once done shooting for you to get them
           developed and scanned yourself!
-        </p>
+        </p> */}
       </div>
     </>
   );
@@ -250,8 +250,8 @@ export default function Home() {
         <div className="flex flex-col gap-4">
           <h2 className="text-lg font-bold">Why am I offering free shoots?</h2>
           <p>
-            I recently graduated high school and will be moving to attend the
-            University of Arkansas at Fayetteville this fall. I have gotten into
+            I recently graduated high school and will be moving to Fayetteville
+            to attend the University of Arkansas this fall. I have gotten into
             digital and film photography in the past year and would love to get
             more experience under my belt and build up a portfolio while
             simultaneously helping out local businesses.
