@@ -5,10 +5,18 @@ import { Nav } from "@/components/nav";
 import { Warning } from "@/components/warning";
 import { ChevronLeft } from "feather-icons-react";
 import Link from "next/link";
+import { cn } from "../lib/cn";
+import { useMenu } from "../context/hamburger-menu";
 
 export default function ContactPage() {
+  const { menuIsOpen } = useMenu();
   return (
-    <main className="flex flex-col lg:flex-row min-h-screen">
+    <main
+      className={cn(
+        "flex flex-col lg:flex-row min-h-screen",
+        menuIsOpen && "lg:flex-col",
+      )}
+    >
       <Nav active="/contact" />
       <div className="flex-1 p-12 max-w-lg w-full m-auto pb-[189px] lg:pb-12 flex flex-col gap-4 items-center justify-center">
         <ContactForm />

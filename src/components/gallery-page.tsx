@@ -6,6 +6,8 @@ import { photos, type Photo } from "@/app/lib/photos";
 import useWindowDimensions from "@/hooks/useWindowDimensions";
 import JustifiedGallery from "./justified-gallery";
 import { Footer } from "./footer";
+import { useMenu } from "@/app/context/hamburger-menu";
+import { cn } from "@/app/lib/cn";
 
 // 💡 This disables SSR *and* delays the import until client runtime
 
@@ -22,8 +24,15 @@ export function GalleryPage({
 
   const { width } = useWindowDimensions();
 
+  const { menuIsOpen } = useMenu();
+
   return (
-    <main className="flex flex-col lg:flex-row min-h-screen">
+    <main
+      className={cn(
+        "flex flex-col lg:flex-row min-h-screen",
+        menuIsOpen && "lg:flex-col",
+      )}
+    >
       <Nav active={active} />
       <div className="flex-1 p-12">
         <JustifiedGallery
