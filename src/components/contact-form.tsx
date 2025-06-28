@@ -1,6 +1,6 @@
 "use client";
 
-import { cn } from "@/app/lib/cn";
+import { cn } from "@/lib/cn";
 import { validate } from "email-validator";
 import { CheckCircle } from "feather-icons-react";
 import { useRef, useState } from "react";

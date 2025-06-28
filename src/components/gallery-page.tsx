@@ -2,12 +2,12 @@
 
 import { Nav } from "@/components/nav";
 
-import { photos, type Photo } from "@/app/lib/photos";
+import { photos, type Photo } from "@/lib/photos";
 import useWindowDimensions from "@/hooks/useWindowDimensions";
 import JustifiedGallery from "./justified-gallery";
 import { Footer } from "./footer";
 import { useMenu } from "@/app/context/hamburger-menu";
-import { cn } from "@/app/lib/cn";
+import { cn } from "@/lib/cn";
 
 // 💡 This disables SSR *and* delays the import until client runtime
 

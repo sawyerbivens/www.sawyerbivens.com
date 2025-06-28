@@ -5,7 +5,7 @@ import { Nav } from "@/components/nav";
 import { Warning } from "@/components/warning";
 import { ChevronLeft } from "feather-icons-react";
 import Link from "next/link";
-import { cn } from "../lib/cn";
+import { cn } from "../../lib/cn";
 import { useMenu } from "../context/hamburger-menu";
 
 export default function ContactPage() {

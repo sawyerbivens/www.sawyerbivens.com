@@ -4,7 +4,7 @@ import { Nav } from "@/components/nav";
 import { ChevronLeft } from "feather-icons-react";
 import Link from "next/link";
 import { useMenu } from "./context/hamburger-menu";
-import { cn } from "./lib/cn";
+import { cn } from "../lib/cn";
 
 export default function NotFound() {
   const { menuIsOpen } = useMenu();
